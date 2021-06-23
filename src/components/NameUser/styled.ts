@@ -4,7 +4,7 @@ export const Container = styled.View`
   display: flex;
   align-items: center;
   flex-direction: row;
-  margin: 20px 0px;
+  margin: 20px 20px;
 `;
 
 export const Name = styled.Text`

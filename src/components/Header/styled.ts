@@ -1,11 +1,11 @@
 import styled from "styled-components/native";
-import colors from "../../style/colors";
+import { theme } from "../../style/colors";
 
 export const Container = styled.View`
   height: 50px;
   align-items: center;
   flex-direction: row;
-  background-color: #fcfcff;
+  background-color: ${theme.color.gray};
   padding: 0px 20px;
 `;
 

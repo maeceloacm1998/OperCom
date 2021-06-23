@@ -4,6 +4,4 @@ export const Container = styled.View`
   flex: 1;
 `;
 
-export const ContainerScrollView = styled.View`
-  padding: 0px 20px;
-`;
+export const ContainerScrollView = styled.View``;
