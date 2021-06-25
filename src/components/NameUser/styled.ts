@@ -18,5 +18,4 @@ export const Image = styled.Image`
   border: 3px solid #6e1dc8;
   border-radius: 200px;
   margin-right: 10px;
-  background-color: #6e1dc8;
 `;

@@ -2,7 +2,7 @@ import styled from "styled-components/native";
 import { theme } from "../../style/colors";
 
 export const Container = styled.View`
-  height: 50px;
+  height: 65px;
   align-items: center;
   flex-direction: row;
   background-color: ${theme.color.gray};
@@ -10,7 +10,7 @@ export const Container = styled.View`
 `;
 
 export const Logo = styled.Image`
-  margin-left: 85px;
+  margin-left: 20%;
   height: 40px;
   width: 130px;
 `;
