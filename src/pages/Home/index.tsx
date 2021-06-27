@@ -2,23 +2,25 @@ import React from "react";
 import { ScrollView, Image, StatusBar } from "react-native";
 
 import HeaderHome from "../../components/Header/Header";
-import NameUser from "../../components/NameUser/NameUser";
 import { BoxResumeDados } from "../../components/BoxResumeDados";
-
 import Title from "../../components/Tittle/Tittle";
 import { BoxPay } from "../../components/BoxPay";
+import { BoxWithImage } from "../../components/BoxWithImage";
+import { theme } from "../../style/colors";
 
 import IconEnvelope from "../../assets/envelope.png";
 import IconPhone from "../../assets/Phone.png";
 import IconWifi from "../../assets/wifi.png";
+import img1 from "../../assets/img1.png";
+import img2 from "../../assets/img2.png";
+import img3 from "../../assets/img3.png";
 
 import { Container, ContainerScrollView } from "./styled";
 import { getStatusBarHeight } from "react-native-status-bar-height";
-import { theme } from "../../style/colors";
 
 const barHeight = getStatusBarHeight();
 
-export default function App() {
+export function Home() {
   return (
     <Container style={{ marginTop: barHeight }}>
       <StatusBar
@@ -30,7 +32,6 @@ export default function App() {
       <HeaderHome />
       <ScrollView>
         <ContainerScrollView>
-          <NameUser />
           <Title children="Resumo de dados" />
 
           <ScrollView
@@ -80,6 +81,30 @@ export default function App() {
             ValueButton="Pagamentos anteriores"
           />
         </ContainerScrollView>
+
+        <Title children="Para Você " />
+        <BoxWithImage
+          TitleLight="Habilite agora seu débito automático e ganhe"
+          Subscription="10% de desconto!"
+          TextButton="Habilitar débito "
+          image={img1}
+        />
+
+        <Title children="Seu Plano" />
+        <BoxWithImage
+          TitleBold="Opercom Black"
+          Subscription="Renova em 04/07/2021 "
+          TextButton="Mudar plano "
+          image={img2}
+        />
+
+        <Title children="Confira Agora" />
+        <BoxWithImage
+          TitleLight="Confira a localização
+          de torres telefônicas para um melhor sinal!"
+          TextButton="Ver localização "
+          image={img3}
+        />
       </ScrollView>
     </Container>
   );

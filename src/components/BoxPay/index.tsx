@@ -49,7 +49,7 @@ export function BoxPay({
           </BoxWidth>
         )}
 
-        <AllButton>
+        <AllButton activeOpacity={0.6}>
           <TextAllButton allColor={allColor}>{ValueButton}</TextAllButton>
           <FontAwesome
             name="chevron-right"
