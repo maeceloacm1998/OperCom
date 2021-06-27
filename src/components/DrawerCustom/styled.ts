@@ -9,7 +9,7 @@ export const Background = styled.Image`
 
 export const Container = styled.View`
   flex: 1;
-  height: 715px;
+  height: 1000px;
   position: relative;
   z-index: 99;
 `;

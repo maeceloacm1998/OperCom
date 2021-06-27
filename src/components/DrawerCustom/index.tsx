@@ -1,5 +1,4 @@
 import React from "react";
-import { View, Text, Image } from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
 
 import { DrawerContentScrollView, DrawerItem } from "@react-navigation/drawer";
@@ -13,12 +12,10 @@ import fundo from "../../assets/fundo.png";
 export function DrawerCustom({ ...props }) {
   const { state } = props;
   const { routes, index } = state;
-
   const focusedRoute = routes[index];
-  console.log("Rota que eu estou", focusedRoute);
 
   return (
-    <DrawerContentScrollView {...props}>
+    <DrawerContentScrollView {...props} scrollEnabled={false}>
       <Background source={fundo} />
 
       <Container>

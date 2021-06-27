@@ -10,8 +10,6 @@ import { Profile } from "../pages/Profile";
 import { Extrato } from "../pages/Extrato";
 import { Configuration } from "../pages/configuration";
 
-import { FontAwesome } from "@expo/vector-icons";
-
 const Drawer = createDrawerNavigator();
 
 const DrawerMenu: React.FC = () => (
